@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ToSVa Squad</title>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+			.anim {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 160px;
+				height: 160px;
+				margin:-80px 0 0 -80px;
+				animation: spin 4s linear infinite;
+			}
+			@keyframes spin { 
+				100% { 
+					transform:rotate(360deg); 
+				} 
+			}
+			.centered {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				min-height: 100vh;
+			}
+			body {
+				font-family: 'Roboto Slab', serif;
+				background: black;
+				color: #eee;
+				overflow: hidden;
+				user-select: none;
+			}
+			a {
+				font-family: 'Roboto Slab', serif;
+				color: #eee;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body onselect="return false;" oncontextmenu="return false;">
+		<div id="loader">
+			<!--https://habrastorage.org/webt/nu/8s/kf/nu8skfoki1zavmo9nlvsgqccfa0.jpeg-->
+			<img class="anim" src="https://yt3.googleusercontent.com/L7YnKT21g4I0lfDpcT-xtWkZSvo_RjuGsAtAKYlYq1uZRoZgwMVkAo8qWvRrr6f9CWc26BOg7gQ=s900-c-k-c0x00ffffff-no-rj">
+		</div>
+		<div class="centered" style="display: none;" id="app">
+			<center>
+				<img style="width: 25vh;" src="https://yt3.googleusercontent.com/L7YnKT21g4I0lfDpcT-xtWkZSvo_RjuGsAtAKYlYq1uZRoZgwMVkAo8qWvRrr6f9CWc26BOg7gQ=s900-c-k-c0x00ffffff-no-rj">
+				<h2>ToSVa Squad</h2>
+				<hr style="color: #eee;">
+				<h3><a target="_blank" href="https://vk.com/public210464548">VK</a></h3>
+				<h3><a target="_blank" href="https://t.me/tosvasq">Telegram</a></h3>
+				<h3><a target="_blank" href="https://www.youtube.com/channel/UCSiD6FjoQNfT8t-iOAnXzPA">YouTube</a></h3>
+			</center>
+		</div>
+		<script>
+			setTimeout(() => {
+				document.getElementById("loader").style.display = "none"
+				document.getElementById("app").style.display = ""
+			}, 1500)
+		</script>
+	</body>
+</html>
